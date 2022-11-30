@@ -4,6 +4,7 @@ import React, {
   useRef,
   useEffect,
   useMemo,
+  Fragment
 } from "react";
 import { ViewMode, GanttProps, Task } from "../../types/public-types";
 import { GridProps } from "../grid/grid";
@@ -450,7 +451,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
     TaskListTable,
   };
   return (
-    <>
+    <Fragment>
       <div
         className={styles.wrapper}
         onKeyDown={handleKeyDown}
@@ -500,6 +501,6 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
         rtl={rtl}
         onScroll={handleScrollX}
       />
-    </>
+    </Fragment>
   );
 };
