@@ -450,7 +450,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
     TaskListTable,
   };
   return (
-    <div>
+    <>
       <div
         className={styles.wrapper}
         onKeyDown={handleKeyDown}
@@ -500,6 +500,6 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
         rtl={rtl}
         onScroll={handleScrollX}
       />
-    </div>
+    </>
   );
 };
